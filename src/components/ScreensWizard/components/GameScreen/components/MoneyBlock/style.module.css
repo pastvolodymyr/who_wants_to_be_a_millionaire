@@ -1,0 +1,104 @@
+.moneyBlock {
+    min-width: 376px;
+    background: var(--white-100);
+}
+
+.moneyBlockInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+    padding: 50px 0;
+}
+
+.sumBlock {
+    height: 40px;
+    width: 65%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-shrink: 0;
+}
+.sumBlock svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.sumBlock span {
+    z-index: 1;
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    transition: var(--transition);
+}
+
+.sumBlockLine {
+    position: absolute;
+    height: 1px;
+    width: 154%;
+    background: var(--black-40);
+    z-index: 0;
+    transition: var(--transition);
+}
+
+.sumBlockActive span {
+    color: var(--orange-100);
+}
+.sumBlockActive svg path {
+    stroke: var(--orange-100);
+    transition: var(--transition);
+}
+.sumBlockActive .sumBlockLine {
+    background: var(--orange-100);
+}
+
+.sumBlockPast span {
+    color: var(--black-40);
+}
+
+@media (max-width: 1024px) {
+    .moneyBlock {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .moneyBlock {
+        min-width: 250px;
+    }
+
+    .sumBlock span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 650px) {
+    .moneyBlock {
+        width: 100%;
+        position: fixed;
+        z-index: 3;
+        right: -100%;
+        transition: var(--transition);
+        overflow: auto;
+        height: 100%;
+    }
+
+    .moneyBlockOpen {
+        right: 0;
+        transition: var(--transition);
+    }
+
+    .sumBlock {
+        width: 80%;
+    }
+
+    .sumBlockLine {
+        width: 125%;
+    }
+}

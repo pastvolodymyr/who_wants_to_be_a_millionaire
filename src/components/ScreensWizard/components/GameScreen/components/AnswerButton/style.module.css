@@ -1,0 +1,126 @@
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.answerButton {
+    position: relative;
+    width: 100%;
+    min-height: 72px;
+    cursor: pointer;
+    margin: 16px;
+    text-align: left;
+}
+.answerButton:before {
+    content: "";
+    position: absolute;
+    background: var(--black-40);
+    width: 17px;
+    height: 1px;
+    left: -16px;
+    top: 49.5%;
+    transition: var(--transition);
+}
+.answerButton:after {
+    content: "";
+    position: absolute;
+    background: var(--black-40);
+    width: 17px;
+    height: 1px;
+    right: -16px;
+    top: 49.5%;
+    transition: var(--transition);
+}
+.answerButton svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+.answerButton svg path {
+    transition: var(--transition);
+}
+.answerButton span {
+    z-index: 1;
+    position: relative;
+}
+@media (hover: hover) and (pointer: fine) {
+    .answerButton:not(.correct, .inCorrect):hover svg path {
+        stroke: var(--orange-100);
+        transition: var(--transition);
+    }
+    .answerButton:not(.correct, .inCorrect):hover:after, .answerButton:hover:before {
+        background: var(--orange-100);
+        transition: var(--transition);
+    }
+}
+
+.selected svg path {
+    stroke: var(--orange-100);
+    transition: var(--transition);
+}
+.selected.correct, .selected.inCorrect {
+    animation: fade 1s infinite;
+}
+.selected svg path {
+    fill: var(--orange-5);
+}
+.selected:after, .selected:before {
+    background: var(--orange-100);
+    transition: var(--transition);
+}
+
+.correct:after, .correct:before {
+    background: var(--green-100);
+    transition: var(--transition);
+}
+.correct svg path  {
+    stroke: var(--green-100);
+    fill: var(--green-5);
+}
+
+.inCorrect svg path  {
+    stroke: var(--red-100);
+    fill: var(--red-5);
+}
+.inCorrect:after, .inCorrect:before {
+    background: var(--red-100);
+    transition: var(--transition);
+}
+
+.buttonLabel {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--black-100);
+    margin: 23px 32px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.labelLetter {
+    color: var(--orange-100);
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+@media (max-width: 650px) {
+    .answerButton {
+        min-height: 56px;
+    }
+
+    .buttonLabel {
+        font-size: 14px;
+        -webkit-line-clamp: unset;
+    }
+}

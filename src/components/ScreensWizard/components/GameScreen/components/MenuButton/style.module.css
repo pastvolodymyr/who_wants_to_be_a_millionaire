@@ -1,0 +1,36 @@
+.menuButton{
+    position: relative;
+    height: 24px;
+    width: 24px;
+    padding: 5px 3px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.menuButtonBar {
+    width: 17px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: black;
+    transition: all var(--transition) ease;
+}
+
+.menuButtonOpen .menuButtonBar.menuButtonBarTop {
+    transform: translateX(3px) rotate(45deg);
+    transform-origin: left;
+}
+.menuButtonOpen .menuButtonBar.menuButtonBarMiddle{
+    opacity: 0;
+}
+.menuButtonOpen .menuButtonBar.menuButtonBarBottom {
+    transform: translateX(3px) rotate(-45deg);
+    transform-origin: left;
+}
+
+@media (max-width: 650px) {
+    .menuButton {
+        display: flex;
+    }
+}

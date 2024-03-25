@@ -1,0 +1,298 @@
+[
+  {
+    "question": "What value is given for the left margin: margin: 5px 10px 3px 8px;?",
+    "correctAnswers": [2],
+    "money": 500,
+    "answers": [
+      {
+        "label": "5px",
+        "value": 1
+      },
+      {
+        "label": "8px",
+        "value": 2
+      },
+      {
+        "label": "3px",
+        "value": 3
+      },
+      {
+        "label": "10px",
+        "value": 4
+      },
+      {
+        "label": "0px",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "question": "Which of the following are valid CSS units?",
+    "correctAnswers": [1, 3, 4],
+    "money": 1000,
+    "answers": [
+      {
+        "label": "px",
+        "value": 1
+      },
+      {
+        "label": "%",
+        "value": 2
+      },
+      {
+        "label": "em",
+        "value": 3
+      },
+      {
+        "label": "rem",
+        "value": 4
+      },
+      {
+        "label": "vw",
+        "value": 5
+      },
+      {
+        "label": "vh",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "question": "What does the CSS property \"z-index\" control?",
+    "correctAnswers": [1],
+    "money": 2000,
+    "answers": [
+      {
+        "label": "The stacking order of positioned elements",
+        "value": 1
+      },
+      {
+        "label": "The opacity of an element",
+        "value": 2
+      },
+      {
+        "label": "The alignment of text within an element",
+        "value": 3
+      },
+      {
+        "label": "The rotation of an element",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "question": "What is the correct syntax for creating a function in JavaScript?",
+    "correctAnswers": [1],
+    "money": 4000,
+    "answers": [
+      {
+        "label": "function myFunction() {}",
+        "value": 1
+      },
+      {
+        "label": "def myFunction() {}",
+        "value": 2
+      },
+      {
+        "label": "void myFunction() {}",
+        "value": 3
+      },
+      {
+        "label": "method myFunction() {}",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "question": "Which of the following are programming languages?",
+    "correctAnswers": [1, 2, 4],
+    "money": 8000,
+    "answers": [
+      {
+        "label": "Python",
+        "value": 1
+      },
+      {
+        "label": "Java",
+        "value": 2
+      },
+      {
+        "label": "HTML",
+        "value": 3
+      },
+      {
+        "label": "JavaScript",
+        "value": 4
+      },
+      {
+        "label": "CSS",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "question": "Which of the following are block-level elements in HTML?",
+    "correctAnswers": [1, 3],
+    "money": 16000,
+    "answers": [
+      {
+        "label": "<div>",
+        "value": 1
+      },
+      {
+        "label": "<span>",
+        "value": 2
+      },
+      {
+        "label": "<p>",
+        "value": 3
+      },
+      {
+        "label": "<a>",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "question": "Which of the following are object-oriented programming languages?",
+    "correctAnswers": [1, 2, 4],
+    "money": 32000,
+    "answers": [
+      {
+        "label": "Java",
+        "value": 1
+      },
+      {
+        "label": "Python",
+        "value": 2
+      },
+      {
+        "label": "C",
+        "value": 3
+      },
+      {
+        "label": "C++",
+        "value": 4
+      },
+      {
+        "label": "JavaScript",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "question": "Which of the following are valid color representations in CSS?",
+    "correctAnswers": [1, 2, 4],
+    "money": 64000,
+    "answers": [
+      {
+        "label": "Hexadecimal (#FFFFFF)",
+        "value": 1
+      },
+      {
+        "label": "RGB (rgb(255, 255, 255))",
+        "value": 2
+      },
+      {
+        "label": "HSL (hsl(0, 100%, 100%))",
+        "value": 3
+      },
+      {
+        "label": "Named Colors (red, blue, green)",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "question": "What does the acronym \"URL\" stand for?",
+    "correctAnswers": [1],
+    "money": 125000,
+    "answers": [
+      {
+        "label": "Uniform Resource Locator",
+        "value": 1
+      },
+      {
+        "label": "Universal Resource Link",
+        "value": 2
+      },
+      {
+        "label": "Universal Reference Locator",
+        "value": 3
+      },
+      {
+        "label": "Uniform Reference Link",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "question": "Which of the following is an example of an inline element in HTML?",
+    "correctAnswers": [3],
+    "money": 250000,
+    "answers": [
+      {
+        "label": "<div>",
+        "value": 1
+      },
+      {
+        "label": "<p>",
+        "value": 2
+      },
+      {
+        "label": "<span>",
+        "value": 3
+      },
+      {
+        "label": "<section>",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "question": "What is the capital of France?",
+    "correctAnswers": [1],
+    "money": 500000,
+    "answers": [
+      {
+        "label": "Paris",
+        "value": 1
+      },
+      {
+        "label": "Rome",
+        "value": 2
+      },
+      {
+        "label": "Berlin",
+        "value": 3
+      },
+      {
+        "label": "Madrid",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "question": "What does HTML stand for?",
+    "correctAnswers": [1],
+    "money": 1000000,
+    "answers": [
+      {
+        "label": "HyperText Markup Language",
+        "value": 1
+      },
+      {
+        "label": "High Tech Markup Language",
+        "value": 2
+      },
+      {
+        "label": "Hyper Transfer Markup Language",
+        "value": 3
+      },
+      {
+        "label": "Hyperlink and Text Markup Language",
+        "value": 4
+      }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+.primaryButton {
+    min-width: 296px;
+    min-height: 64px;
+    border-radius: 12px;
+    color: var(--white-100);
+    background: var(--orange-100);
+    font-size: 20px;
+    line-height: 116%;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.disabled {
+    background: var(--orange-80);
+    pointer-events: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .primaryButton:hover {
+        background: var(--orange-80);
+    }
+}
+
+.primaryButton:focus {
+    background: var(--orange-120);
+}
+
+@media (max-width: 650px) {
+    .primaryButton {
+        width: 100%;
+        min-height: 48px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+}
